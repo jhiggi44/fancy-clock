@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  height: 100vh;
+  width: 100vw;
+  min-width: 900px;
+  background-image: url('./images/space-background.jpg');
+  background-size: cover;
+}
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(28, 12, 22, .85);
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  min-width: 900px;
+}
+
+.one-col-container {
+  display: flex;
+  flex-direction: column;
+  width: 25px;
+  margin-right: 20px;
+  justify-content: space-around;
+}
+
+.digit-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  width: 120px;
+}
+
+.letter-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  width: 150px;
+  align-self: flex-end;
+}
+
+.digit-pixel {
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: rgb(28, 12, 22, .9);
+}
+
+.pixel-active {
+  background-color:  rgb(58, 219, 229);
+}
+
+.colon {
+  margin: 10px 0;
+}
+
+
