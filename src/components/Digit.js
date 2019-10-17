@@ -1,9 +1,9 @@
 import React from 'react';
 import '../App.css';
 
-function Digit({isFirst, map}) {
+function Digit({additionalClasses, map}) {
     return (
-        <div className={isFirst ? "one-col-container" : "digit-container"}>
+        <div className={'digit-container ' + additionalClasses}>
           {
             map.map((row, i) =>
               row.map((isActive, j) => <div key={"" + i + j} className={`${isActive ? "digit-pixel pixel-active" : "digit-pixel"}`}></div>)

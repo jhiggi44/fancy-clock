@@ -26,14 +26,6 @@ body {
   min-width: 900px;
 }
 
-.one-col-container {
-  display: flex;
-  flex-direction: column;
-  width: 25px;
-  margin-right: 20px;
-  justify-content: space-around;
-}
-
 .digit-container {
   display: flex;
   flex-direction: row;
@@ -42,11 +34,11 @@ body {
   width: 120px;
 }
 
-.letter-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-right: 20px;
+.first-digit {
+  width: 25px;
+}
+
+.letter {
   width: 150px;
   align-self: flex-end;
 }
@@ -65,7 +57,7 @@ body {
 }
 
 .colon {
-  margin: 10px 0;
+  margin: 10px 20px 10px 0;
 }
 
 

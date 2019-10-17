@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Digit from './components/Digit.js';
-import Letter from './components/Letter.js';
 import Colon from './components/Colon.js';
 
 import digitMap from './digitMap';
@@ -37,13 +36,13 @@ function App() {
   return (
     <div className="App">
       <div className="clock-container">
-        <Digit isFirst={true} map={map.getFirstDigit(parseInt(time[0]))} />
+        <Digit additionalClasses={'first-digit'} map={map.getFirstDigit(parseInt(time[0]))} />
         <Digit map={map.getNum(parseInt(time[1]))} />
         <Colon />
         <Digit map={map.getNum(parseInt(time[2]))} />
         <Digit map={map.getNum(parseInt(time[3]))} />
-        <Letter map={map.getFirstLetter(time[4] === 'p')} />
-        <Letter map={map.getSecondLetter()} />
+        <Digit additionalClasses={'letter'} map={map.getFirstLetter(time[4] === 'p')} />
+        <Digit additionalClasses={'letter'} map={map.getSecondLetter()} />
       </div>
     </div>
   );
